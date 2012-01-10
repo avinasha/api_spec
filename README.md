@@ -112,3 +112,7 @@ You can also check the length of key containing an array using:
 ```
 response.should have_api_key('ticket.attachments').with_length(2)
 ```
+
+License
+-------
+See LICENSE file
