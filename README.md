@@ -80,10 +80,16 @@ Consider JSON API output:
 ```
 
 You can check the existence of a top level api key like `count` using: 
-```response.should have_api_key('count')```
+
+```
+response.should have_api_key('count')
+```
 
 You can check the existence of an inner key like `subject` using the `.`:
-```response.should have_api_key('ticket.subject')```
+
+```
+response.should have_api_key('ticket.subject')
+```
 
 You can check the existence of a key in an array like `id` of
 `attachments` using:
@@ -95,8 +101,14 @@ response.should have_api_key('ticket.attachments.1.id')
 
 #### with_value
 The ApiSpec::Matchers allows you to check value of a key using:
-```response.should have_api_key('count').with_value(1)```
+
+```
+response.should have_api_key('count').with_value(1)
+```
 
 #### with_length
 You can also check the length of key containing an array using:
-```response.should have_api_key('ticket.attachments').with_length(2)```
+
+```
+response.should have_api_key('ticket.attachments').with_length(2)
+```
